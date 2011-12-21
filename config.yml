@@ -1,0 +1,17 @@
+appname: "DemocraDJ"
+
+# The default layout to use for your application (located in
+# views/layouts/main.tt)
+layout: "main"
+
+charset: "UTF-8"
+
+template: "template_toolkit"
+engines:
+  template_toolkit:
+    encoding:  'utf8'
+    start_tag: '[%'
+    end_tag:   '%]'
+
+# Serialize our output to JSON
+serializer: 'JSON'
