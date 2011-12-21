@@ -1,34 +1,37 @@
-<div class="page-header">
-  <h1>DemocraDJ <small>Democratic DJ for your office!</small></h1>
+<div class="sixteen columns">
+    <h5>Navigation</h5>
+    <a href="#" id="toggleSearch">Search</a> //
+    <a href="#" id="togglePlaylist">Playlist</a> //
+    <a href="#playerContainer" id="togglePlayer">Player</a>
+    <hr />
 </div>
-<div class="row">
-    <div class="span14">
-        <h2>Search</h2>
-        
-        <form class="form-stacked">
-            <fieldset>
-                <div class="clearfix">
-                    <label for="xlInput">Song search</label>
-                    <div class="input">
-                        <input class="xlarge" id="search" name="search" size="30" type="text" />
-                    </div>
-                </div><!-- /clearfix -->
-                <div class="actions">
-                    <input type="submit" class="btn primary" value="Search">&nbsp;<button type="reset" class="btn">Cancel</button>
-                </div>
-            </fieldset>
-      </form>
 
-    </div>
+<div class="sixteen columns">
+    <p>Welcome to your democratic DJ. Serach for songs in the search box and add them to the queue. Allow others in your office to add songs. Enjoy a collaborative music listening experience!</p>
+</div>
 
-  <div class="span10">
-    <h2>Player</h2>
+<div id="searchContainer" class="sixteen columns">
+<h3>Search</h3>
+<form>
+    <input type="text" name="search" />
+    <input type="submit" value="Search" />
+</form>
 
+
+
+</div>
+<div id="playlistContainer" class="sixteen columns">
+<h3>Upcoming Tunes</h3>
+<div id="playlist"></div>
+</div>
+
+<div id="playerContainer" class="sixteen columns">
+<h3>Player</h3>
 <div id="player"></div>
+<div>
 
-  </div>
-  <div class="span4">
-    <h3>Playlist</h3>
-    <div id="playlist"></div>
-  </div>
-</div>
+
+<div class="sixteen columns">
+<h5>Footer</h5>
+&copy; 2012 Adam Taylor // Powered by Perl, Dancer &amp; YouTube.
+<div>

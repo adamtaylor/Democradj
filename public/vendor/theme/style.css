@@ -38,7 +38,7 @@ display: block;
 overflow: hidden;
 width: 100%;
 height: 36px;
-background: url("player.png") repeat-x scroll 0 0 #0f0e0e;
+background: url("/vendor/theme/player.png") repeat-x scroll 0 0 #0f0e0e;
 border-style:solid;
 border-color:#413e3e;
 border-width:1px 0;
@@ -78,29 +78,29 @@ display:block;
 position: absolute;
 top: 0;
 left: 0;
-background: url("maccaco.png") no-repeat left top transparent;
+background: url("/vendor/theme/maccaco.png") no-repeat left top transparent;
 width: 30px;
 height: 30px;
 cursor: pointer;
 border-right: 1px solid #000;
 }
 .ppplay:hover {
-background: url("maccaco.png") no-repeat left -35px transparent;
+background: url("/vendor/theme/maccaco.png") no-repeat left -35px transparent;
 }
 .ppplay:active {
-background: url("maccaco.png") no-repeat left -36px transparent;
+background: url("/vendor/theme/maccaco.png") no-repeat left -36px transparent;
 }
 
 .pppause {
-background: url("maccaco.png") no-repeat left -70px transparent;
+background: url("/vendor/theme/maccaco.png") no-repeat left -70px transparent;
 }
 
 .pppause:hover {
-background: url("maccaco.png") no-repeat left -105px transparent;
+background: url("/vendor/theme/maccaco.png") no-repeat left -105px transparent;
 }
 
 .pppause:active {
-background: url("maccaco.png") no-repeat left -106px transparent;
+background: url("/vendor/theme/maccaco.png") no-repeat left -106px transparent;
 }
 
 .ppfsenter,
@@ -111,24 +111,24 @@ top: 0;
 right: 0;
 width: 30px;
 height: 30px;
-background: url("maccaco.png") no-repeat right top transparent;
+background: url("/vendor/theme/maccaco.png") no-repeat right top transparent;
 cursor: pointer;
 border-left: 1px solid #413e3e;
 }
 .ppfsenter:hover {
-background: url("maccaco.png") no-repeat right -35px transparent;
+background: url("/vendor/theme/maccaco.png") no-repeat right -35px transparent;
 }
 .ppfsenter:active {
-background: url("maccaco.png") no-repeat right -36px transparent;
+background: url("/vendor/theme/maccaco.png") no-repeat right -36px transparent;
 }
 .ppfsexit {
-background: url("maccaco.png") no-repeat right -70px transparent;
+background: url("/vendor/theme/maccaco.png") no-repeat right -70px transparent;
 }
 .ppfsexit:hover {
-background: url("maccaco.png") no-repeat right -105px transparent;
+background: url("/vendor/theme/maccaco.png") no-repeat right -105px transparent;
 }
 .ppfsexit:active {
-background: url("maccaco.png") no-repeat right -106x transparent;
+background: url("/vendor/theme/maccaco.png") no-repeat right -106x transparent;
 }
 
 .ppscrubber {
@@ -138,7 +138,7 @@ left: 0;
 bottom: 0;
 height: 5px;
 width: 100%;
-background: url("maccaco-load.gif") repeat-x left top transparent;
+background: url("/vendor/theme/maccaco-load.gif") repeat-x left top transparent;
 margin: auto;
 padding: 0;
 border-bottom: 1px solid #000;
@@ -200,7 +200,7 @@ overflow: hidden;
 
 /* special for single */
 .pptimeleft {
-background: url("maccaco.png") no-repeat -91px top transparent;
+background: url("/vendor/theme/maccaco.png") no-repeat -91px top transparent;
 }
 .ppvmax  {
 position: absolute;
@@ -208,13 +208,13 @@ top: 0;
 right: 31px;
 width: 30px;
 border-left:none;
-background: url("maccaco.png") no-repeat -842px top transparent;
+background: url("/vendor/theme/maccaco.png") no-repeat -842px top transparent;
 }
 .ppvmax:hover  {
-background: url("maccaco.png") no-repeat -842px -35px transparent;
+background: url("/vendor/theme/maccaco.png") no-repeat -842px -35px transparent;
 }
 .ppvmax:active  {
-background: url("maccaco.png") no-repeat -842px -36px transparent;
+background: url("/vendor/theme/maccaco.png") no-repeat -842px -36px transparent;
 }
 
 .ppmute  {
@@ -224,13 +224,13 @@ width: 30px;
 right: 122px;
 border-left:1px solid #413e3e;
 border-right:none;
-background: url("maccaco.png") no-repeat -750px top transparent;
+background: url("/vendor/theme/maccaco.png") no-repeat -750px top transparent;
 }
 .ppmute:hover  {
-background: url("maccaco.png") no-repeat -750px -35px transparent;
+background: url("/vendor/theme/maccaco.png") no-repeat -750px -35px transparent;
 }
 .ppmute:active  {
-background: url("maccaco.png") no-repeat -750px -36px transparent;
+background: url("/vendor/theme/maccaco.png") no-repeat -750px -36px transparent;
 }
 
 .ppvslider {
@@ -239,7 +239,7 @@ right:62px;
 top: 13px;
 height: 6px;
 width: 60px;
-background: url("maccaco.png") no-repeat -781px -13px transparent;
+background: url("/vendor/theme/maccaco.png") no-repeat -781px -13px transparent;
 }
 
 .ppvmarker {
@@ -248,14 +248,14 @@ right:0;
 left: 0;
 height: 6px;
 width: 100%;
-background: url("maccaco.png") no-repeat -634px -13px transparent;
+background: url("/vendor/theme/maccaco.png") no-repeat -634px -13px transparent;
 }
 
 .ppvknob  {
 cursor: pointer;
 z-index: 201;
 position: absolute;
-background: url("maccaco.png") no-repeat -699px -5px transparent;
+background: url("/vendor/theme/maccaco.png") no-repeat -699px -5px transparent;
 top:-7px;
 left:0px;
 width: 6px;
@@ -268,7 +268,7 @@ display:block;
 position: absolute;
 top: 0;
 right: 255px;
-background: url("maccaco.png") no-repeat -59px top transparent;
+background: url("/vendor/theme/maccaco.png") no-repeat -59px top transparent;
 width: 30px;
 height: 30px;
 cursor: pointer;
@@ -277,26 +277,26 @@ border-right:1px solid #000;
 }
 .ppnext { border-right:none;}
 .ppnext:hover {
-background: url("maccaco.png") no-repeat -59px -35px transparent;
+background: url("/vendor/theme/maccaco.png") no-repeat -59px -35px transparent;
 }
 .ppnext:active {
-background: url("maccaco.png") no-repeat -59px -36px transparent;
+background: url("/vendor/theme/maccaco.png") no-repeat -59px -36px transparent;
 }
 
 .ppprev {
 right: 284px;
-background: url("maccaco.png") no-repeat -32px top transparent;
+background: url("/vendor/theme/maccaco.png") no-repeat -32px top transparent;
 }
 
 .ppprev:hover {
-background: url("maccaco.png") no-repeat -32px -35px transparent;
+background: url("/vendor/theme/maccaco.png") no-repeat -32px -35px transparent;
 }
 .ppprev:active {
-background: url("maccaco.png") no-repeat -32px -36px transparent;
+background: url("/vendor/theme/maccaco.png") no-repeat -32px -36px transparent;
 }
 
 .pptestcard {
-background: url("noise.gif") center center repeat;
+background: url("/vendor/theme/noise.gif") center center repeat;
 width: 100%;
 height: 100%;
 color: #fff;
@@ -325,7 +325,7 @@ margin-bottom: -38px;
 display: block;
 z-index:9010;
 padding: 0px;
-background: url("buffering.gif") no-repeat center center #000;
+background: url("/vendor/theme/buffering.gif") no-repeat center center #000;
 height: 84px;
 width: 84px;
 -moz-border-radius: 15px;
@@ -346,13 +346,13 @@ width: 84px;
 display: block;
 z-index:8000;
 padding: 0px;
-background: url("start.png") no-repeat left top transparent;
+background: url("/vendor/theme/start.png") no-repeat left top transparent;
 }
 .ppstart:hover {
-background: url("start.png") no-repeat left bottom transparent;
+background: url("/vendor/theme/start.png") no-repeat left bottom transparent;
 }
 .ppstart:active{
-background: url("start.png") no-repeat left -169px transparent;
+background: url("/vendor/theme/start.png") no-repeat left -169px transparent;
 }
 
 
