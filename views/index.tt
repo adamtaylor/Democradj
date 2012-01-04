@@ -12,9 +12,9 @@
 
 <div id="searchContainer" class="sixteen columns">
 <h3>Search</h3>
-<form id="search" action="#">
+<form action="#">
     <input type="text" name="search" />
-    <input type="submit" value="Search" />
+    <input id="search" type="button" value="Search" />
 </form>
 
 <div id="searchResults"></div>

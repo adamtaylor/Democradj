@@ -104,15 +104,17 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 
-    $('#search').submit(function () {
+    $('#search').click(function () {
         // FIXME how to grab the query && do the post correctly
         var query = $('input[name=search]');
-        /*alert(query.val);*/
-        $.post( '/search', { search: Bonobo }, function(data) {
-            alert( data );
+        $.post( '/search', { search: "Bonobo" }, function(data) {
             var items = [];
             $.each(data, function(key, val) {
-                items.push('<li id="' + key + '">' + val.title + '</li>');
+                // continue if val !~ /.*\s-\s.*/
+                items.push(
+                    '<li>' + val.title +
+                    ' - <a href="#">Add to queue</a> </li>'
+                );
             });
 
             $('<ul/>', {
