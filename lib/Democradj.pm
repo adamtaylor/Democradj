@@ -26,7 +26,7 @@ get '/api/playlist' => sub {
         },
         {
             0 => {
-                src => 'http://www.youtube.com/watch?v=lj39bxQC_VU',
+                src => 'http://www.youtube.com/watch?v=LA-lOywYGic',
                 type => 'video/youtube'
             }
         },
@@ -51,9 +51,17 @@ post '/search' => sub {
         my $ref = decode_json $resp->content;
 
         foreach ( @{$ref->{feed}->{entry}} ) {
+            my $url = $_->{'media$group'}->{'media$player'}->{'url'};
+            my $title = $_->{'media$group'}->{'media$title'}->{'$t'};
+
+            # Skip stuff that's probably not a song, e.g. Foo - Bar
+            next if $title !~ /.*\s-\s.*/;
+            # Skip stuff that doesn't include the searched phrase
+            next if $title !~ /$query/i;
+
             push @ret, {
-                url   => $_->{'media$group'}->{'media$player'}->{'url'},
-                title => $_->{'media$group'}->{'media$title'}->{'$t'},
+                url   => $url,
+                title => $title,
             };
         }
     }

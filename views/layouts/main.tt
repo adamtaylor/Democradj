@@ -105,9 +105,10 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     $('#search').click(function () {
-        // FIXME how to grab the query && do the post correctly
-        var query = $('input[name=search]');
-        $.post( '/search', { search: "Bonobo" }, function(data) {
+        // FIXME is there a nicer way of getting this?
+        var query = document.search.query.value;
+        // FIXME if defined quuery...
+        $.post( '/search', { search: query }, function(data) {
             var items = [];
             $.each(data, function(key, val) {
                 // continue if val !~ /.*\s-\s.*/
@@ -117,6 +118,7 @@ $(document).ready(function() {
                 );
             });
 
+            // FIXME delete previous search results
             $('<ul/>', {
                 'class': 'my-new-list',
                 html: items.join('')
